@@ -11,7 +11,7 @@ func main() {
 
 	rules := jury.ValidationRules{
 		"email": jury.Rules{
-			rules.EmailRule{},
+			rules.Email{},
 		},
 	}
 

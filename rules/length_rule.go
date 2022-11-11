@@ -4,7 +4,7 @@ import "github.com/adesubomi/jury"
 
 type LengthRule struct {
 	jury.Rule
-	Min, Max int
+	Min, Max *int
 }
 
 type ExactLengthRule struct {

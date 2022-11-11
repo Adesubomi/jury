@@ -2,13 +2,13 @@ package rules
 
 import "github.com/adesubomi/jury"
 
-type EmailRule struct {
+type Email struct {
 	jury.Rule
 	FieldName string
 	Template  string
 }
 
-func (r EmailRule) Validate(defaultFieldName string) string {
+func (r Email) Validate(defaultFieldName string) string {
 	template := defaultFieldName + " is not valid"
 	return template
 }
